@@ -26,15 +26,15 @@ vector<int> factorial(int n){
 int main() {
 	// your code goes here
 	int test,n;
-	cout<<"Enter No of test Cases";
+	cout<<"Enter No of test Cases  ";
 	cin >> test;
 	
 	while(test--){
-	    cout<<"Enter Number";	
+	    cout<<"Enter Number  ";	
 	    cin >> n;
 	    vector<int> largeNum = factorial(n);
         for(vector<int>::reverse_iterator it = largeNum.rbegin(); it != largeNum.rend();it++){
-            cout <<"Factorial : "<< *it;
+            cout << *it;
         }
 	    cout << endl;
 	}
